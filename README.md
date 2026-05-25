@@ -51,7 +51,7 @@ npm run preview  # посмотреть прод-сборку локально
 
 ## Vibe coding log
 
-- **LLM-ассистент:** _Claude
+- **LLM-ассистент:** Claude
 - **2–3 ключевых промпта:**
   1. привет! прочитай ридми этого файла и сделай мне нестандартные элементы, пожалуйста
   2. сделай так, чтобы в моем index.html при нажатии на проекты с какой либо анимацией открывались их описания
@@ -59,4 +59,4 @@ npm run preview  # посмотреть прод-сборку локально
 
 ## Live URL
 
-> **TODO студент:** вставь сюда [https://<username>.github.io/<repo>/](https://hermaisones.github.io/cv-lab/)
+> [https://<username>.github.io/<repo>/](https://hermaisones.github.io/cv-lab/)
