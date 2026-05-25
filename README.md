@@ -59,4 +59,4 @@ npm run preview  # посмотреть прод-сборку локально
 
 ## Live URL
 
-> **TODO студент:** вставь сюда https://<username>.github.io/<repo>/
+> **TODO студент:** вставь сюда [https://<username>.github.io/<repo>/](https://hermaisones.github.io/cv-lab/)
