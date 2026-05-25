@@ -3,58 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV — Your Name</title>
+    <title>CV — Матвей Попов </title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main class="cv">
       <header class="cv__header">
-        <h1>Your Name</h1>
-        <p class="cv__tagline">
-          One-line summary. Who you are, what you do, what you want next.
-        </p>
+        <div class="typewriter-name" id="tw-name"></div>
+        <div class="typewriter-role" id="tw-role"></div>
         <ul class="cv__contacts">
-          <li><a href="mailto:you@example.com">you@example.com</a></li>
-          <li><a href="https://github.com/yourname">github.com/yourname</a></li>
+          <li><a href="mailto:duwapsmokedox@gmail.com">duwapsmokedox@gmail.com</a></li>
+          <li><a href="https://github.com/hermaisones">github.com/hermaisones</a></li>
         </ul>
 
-        <!-- TODO: твой нестандартный элемент.
-             Пример: переключатель темы, anim, easter egg. -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
           🌗
         </button>
       </header>
-
+      <!-- index.html: добавь где-нибудь в body -->
+      <div class="egg-reveal" id="eggReveal">
+        🎉 <strong>Ты нашёл это!</strong><br>
+        Вау! Пасхалочка! Поздравляю!
+      </div> 
+      <!-- up up down down left right left right B A -->
       <section>
         <h2>About</h2>
         <p>
-          Two or three sentences. What you care about, what you've shipped,
-          where you're heading.
+          Обучаюсь в СПбПУ Петра Великого, хочу реализовать свой потенциал в разработке ПО, в частности на таких ЯП как JS/Python. Нужна серверная часть? Напиши мне через четыре года.
         </p>
       </section>
 
       <section>
         <h2>Experience / Projects</h2>
-        <article>
-          <h3>Project / Role Title</h3>
-          <p class="cv__meta">Company / Context · 2024 — now</p>
-          <p>What you did. Why it mattered. What shipped.</p>
+
+        <article class="project">
+          <button class="project__toggle" aria-expanded="false">
+            <span class="project__title-wrap">
+              <span class="project__name">OpenAI / Team-Lead</span>
+              <span class="project__meta">Sora · 2025 — now</span>
+            </span>
+            <span class="project__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="project__body" hidden>
+            <div class="project__inner">
+              <p>We went crazy on this thing. Это все что я могу сказать о моей роли в этом проекте.</p>
+            </div>
+          </div>
         </article>
-        <article>
-          <h3>Another One</h3>
-          <p class="cv__meta">Context · 2023</p>
-          <p>Same shape. Keep it tight.</p>
+
+        <article class="project">
+          <button class="project__toggle" aria-expanded="false">
+            <span class="project__title-wrap">
+              <span class="project__name">Telegram</span>
+              <span class="project__meta">The best messenger of all time · 2014</span>
+            </span>
+            <span class="project__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="project__body" hidden>
+            <div class="project__inner">
+              <p>Вы думали брат Дурова написал код к телеграмму? Ошибаетесь. Годы долгой, упорной работы над этим мессенджером принадлежали и мне тоже..</p>
+            </div>
+          </div>
         </article>
+
       </section>
 
       <section>
         <h2>Skills</h2>
-        <ul class="cv__skills">
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>CI/CD</li>
-          <li>Other thing you actually know</li>
-        </ul>
+        <div class="cv__skills-bars">
+          <div class="skill-row">
+            <span class="skill-label">JavaScript</span>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-pct="65"></div>
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">C++</span>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-pct="75"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Git</span>
+            <div class="skill-bar-bg">
+              <div class="skill-bar-fill" data-pct="90"></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+        </div>
       </section>
     </main>
 
